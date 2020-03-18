@@ -116,7 +116,7 @@ class Easy_Documentation_Public {
 			if ( $exists_in_theme != '' ) {
 				return $exists_in_theme;
 			} else {
-				return plugin_dir_path( __DIR__ ) . 'templates/archive.php';
+				return plugin_dir_path( __FILE__ ) . 'templates/archive.php';
 			}
 		}
 
@@ -125,11 +125,23 @@ class Easy_Documentation_Public {
 		    if ( $exists_in_theme != '' ) {
 		    	return $exists_in_theme;
 		    } else {
-		    	return plugin_dir_path( __DIR__ ) . 'templates/single.php';
+		    	return plugin_dir_path( __FILE__ ) . 'templates/single.php';
 		    }
 		}
 
 		return $template;
+	}
+
+	function portfolio_page_template( $template ) {
+ 
+	if ( is_page( 'portfolio' )  ) {
+	    $new_template = locate_template( array( 'portfolio-page-template.php' ) );
+	    if ( '' != $new_template ) {
+	        return $new_template ;
+	    }
+	}
+	 
+	return $template;
 	}
 
 }
