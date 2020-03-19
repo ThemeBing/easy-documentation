@@ -67,9 +67,9 @@ class Easy_Documentation_Public {
 				'add_new'               => __( 'Add New', 'easy-documentation' ),
         		'add_new_item'          => __( 'Add New Documentation', 'easy-documentation' ),
 			),
-			'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes' ),
+			'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', 'page-attributes' ),
 			'taxonomies'            => array( 'digital_categories', 'digital_tags' ),
-			'hierarchical'          => false,
+			'hierarchical'          => true,
 			'public'                => true,
 			'show_ui'               => true,
 			'show_in_menu'          => true,
@@ -87,8 +87,7 @@ class Easy_Documentation_Public {
 				'pages'                 => true,
 				'feeds'                 => true,
 			),
-			'capability_type'       => 'page',
-			'show_in_rest'          => true,
+			'capability_type'       => 'page'
 		));
 
 	}
