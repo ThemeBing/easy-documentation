@@ -58,10 +58,10 @@ class Easy_Documentation_Public {
 
 		register_post_type( 'easy_documentation', array(
 			'label'                 => __( 'Easy Documentation', 'easy-documentation' ),
-			'description'           => __( 'Easy Documentation Items', 'easy-documentation' ),
+			'description'           => __( 'Easy Documentation', 'easy-documentation' ),
 			'labels'                => array(
-				'name'                  => _x( 'Documentation Items', 'Post Type General Name', 'easy-documentation' ),
-				'singular_name'         => _x( 'Documentation Item', 'Post Type Singular Name', 'easy-documentation' ),
+				'name'                  => _x( 'Documentations', 'Post Type General Name', 'easy-documentation' ),
+				'singular_name'         => _x( 'Documentation', 'Post Type Singular Name', 'easy-documentation' ),
 				'menu_name'             => __( 'Documentation', 'easy-documentation' ),
 				'name_admin_bar'        => __( 'Documentation Item', 'easy-documentation' ),
 				'add_new'               => __( 'Add New', 'easy-documentation' ),
@@ -82,7 +82,7 @@ class Easy_Documentation_Public {
 			'exclude_from_search'   => false,
 			'publicly_queryable'    => true,
 			'rewrite'               => array(
-				'slug'                  => 'easy_documentation',
+				'slug'                  => 'easy-documentation',
 				'with_front'            => true,
 				'pages'                 => true,
 				'feeds'                 => true,
