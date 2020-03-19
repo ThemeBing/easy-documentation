@@ -67,7 +67,7 @@ class Easy_Documentation_Public {
 				'add_new'               => __( 'Add New', 'easy-documentation' ),
         		'add_new_item'          => __( 'Add New Documentation', 'easy-documentation' ),
 			),
-			'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', 'page-attributes' ),
+			'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'page-attributes' ),
 			'taxonomies'            => array( 'digital_categories', 'digital_tags' ),
 			'hierarchical'          => true,
 			'public'                => true,
@@ -94,7 +94,7 @@ class Easy_Documentation_Public {
 
 	// Register Custom taxonomies
 	public function easy_documentation_taxonomies() {
-	    // Add new taxonomy, make it hierarchical (like categories)	 
+	    // Add new taxonomy, make it hierarchical (like categories)
 	    register_taxonomy( 'digital_categories', array( 'easy_documentation' ), array(
 	        'hierarchical'      => true,
 	        'labels'            => array(
@@ -132,14 +132,14 @@ class Easy_Documentation_Public {
 	}
 
 	function portfolio_page_template( $template ) {
- 
+
 	if ( is_page( 'portfolio' )  ) {
 	    $new_template = locate_template( array( 'portfolio-page-template.php' ) );
 	    if ( '' != $new_template ) {
 	        return $new_template ;
 	    }
 	}
-	 
+
 	return $template;
 	}
 
