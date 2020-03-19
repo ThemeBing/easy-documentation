@@ -6,9 +6,8 @@
 
  get_header(); ?>
 
-<div class="container">
 	<div class="row">
-		<div class="col-4">
+		<div class="col-lg-4">
 			<div class="docs-sidebar">
 				<ul>
 				<?php 
@@ -20,7 +19,7 @@
 			    </ul>
 		    </div>
 		</div>
-		<div class="col-8">
+		<div class="col-lg-8">
 			<div class="docs-wrapper">
 			<?php while ( have_posts() ) { the_post(); ?>
 				<?php the_title( '<h1 class="docs-title">','</h1>' ) ?>
@@ -34,6 +33,5 @@
 			</div>
 		</div>
 	</div>
-</div>
 
 <?php get_footer();
