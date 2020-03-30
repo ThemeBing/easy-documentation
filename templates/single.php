@@ -6,7 +6,7 @@
 
  get_header(); ?>
 
- 	<div class="container">
+ 	<div class="container mt-5 mb-5">
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="docs-sidebar">
